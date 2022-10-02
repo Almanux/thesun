@@ -1,0 +1,10 @@
+<div class="createStormDiv">
+    <p class="tituloModal">Create your own storm</p>
+    <div class="modelContent">
+        <label>Solar Wind Temperature</label>
+        <mat-slider thumbLabel tickInterval="10000" step="10000" class="stormSlider" [valueText]="actualData.temp.temperaturas.real" [value]="actualData.temp.temperaturas.raw" [min]="actualData.temp.rangoPosible.min" [max]="actualData.temp.rangoPosible.max" aria-label=" º K"></mat-slider>
+
+        <label>Solar Wind Speed</label>
+        <mat-slider thumbLabel tickInterval="1" step="1" class="stormSlider" [valueText]="actualData.wind.value" [value]="actualData.wind.value" [min]="actualData.wind.rangoPosible.min" [max]="actualData.wind.rangoPosible.max" aria-label=" Km/seg"></mat-slider>
+    </div>
+</div>

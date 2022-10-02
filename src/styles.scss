@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow: hidden !important;}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/*POPUPS*/
+
+.popoverCustomClass {
+    --bs-popover-header-color: #cba469 !important;
+    --bs-popover-header-bg: #202020 !important;
+    --bs-popover-bg: #ffffffe6 !important;
+    border: none !important;
+}
+
+.mat-slider-track-background {
+    background-color: rgb(184 184 184 / 30%) !important;
+}

@@ -1,0 +1,10 @@
+<div class="detSolarInfo">
+    <p class="popuptitle" #popuptitle>{{model.controlValues.wind.windInfo.title}}</p>
+    <div class="popupContent">
+        <img alt="Imagen sol" class="windInfoImagen" src="{{model.controlValues.wind.windInfo.image}}"/>
+        <p class="descWindInfo" [innerHTML]="model.controlValues.wind.windInfo.desc"></p>
+        <label class="wInfoLinks">More info</label>
+        <br/>
+        <a *ngFor="let link of model.controlValues.wind.windInfo.links" [href]="link" class="solarLink">{{link}}</a>
+    </div>
+</div>

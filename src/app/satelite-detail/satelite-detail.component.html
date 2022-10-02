@@ -1,0 +1,14 @@
+<div class="detSatDiv">
+    <p class="nombreDetSat" #nombreDetSat>{{satData.name}}</p>
+    <div *ngIf="satData.image" class="imagenDetSat">
+        <img *ngIf="!satData.imageDet" alt="Imagen {{satData.name}}" class="satImg" src="{{satData.image}}"/>
+        <img *ngIf="satData.imageDet" alt="Imagen {{satData.name}}" class="satImg" src="{{satData.imageDet}}"/>
+        <div [ngClass]="{'agenciasUno': satData.agencia.length == 1, 'agenciasDos': satData.agencia.length == 2, 'agenciasTres': satData.agencia.length == 3}">
+            <img *ngFor="let agencia of satData.agencia" class="agenciaImg" alt="Imagen agencia" src="{{agencia}}" />
+        </div>
+    </div>
+    <p class="descDetSat" [innerHTML]="satData.desc"></p>
+    <label class="satEnlaces">Mission Links</label>
+    <br/>
+    <a *ngFor="let link of satData.link" [href]="link" class="linkDetSat">{{link}}</a>
+</div>

@@ -1,0 +1,72 @@
+
+div.detSatDiv {
+    padding-bottom: 1em;
+}
+
+p.nombreDetSat {
+    color: #FFF;
+    //background-color: #494949;
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.agenciasUno {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+div.agenciasDos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+div.agenciasDos > img {
+    width: 200px !important;
+}
+
+div.agenciasTres {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+a.linkDetSat {
+    padding-left: 1em;
+}
+
+p.descDetSat {
+    padding: 1em;
+}
+
+div.imagenDetSat {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.imagenDetSat > img.satImg {
+    max-width: 500px;
+    grid-column: 1;
+    border-radius: 1em;
+}
+
+img.agenciaImg {
+    max-width: 400px;
+}
+
+
+
+label.satEnlaces {
+    font-weight: bold;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    color: #249d1b;
+}
